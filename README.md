@@ -1,0 +1,1 @@
+# kubernetes_py3_master_image
