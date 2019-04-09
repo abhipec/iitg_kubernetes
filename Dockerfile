@@ -25,7 +25,7 @@ RUN pip3 --no-cache-dir install docopt joblib natsort scipy
 
 RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn
 
-RUN pip3 --no-cache-dir install dill bleach
+RUN pip3 --no-cache-dir install dill bleach namedtupled
 #
 # Expose port 80
 #EXPOSE 80
