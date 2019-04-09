@@ -24,6 +24,8 @@ RUN apt-get install -y wget vim htop fish datamash
 RUN pip3 --no-cache-dir install docopt joblib natsort scipy
 
 RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn
+
+RUN pip3 --no-cache-dir install dill bleach
 #
 # Expose port 80
 #EXPOSE 80
