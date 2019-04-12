@@ -18,6 +18,10 @@ A sample job file is available at [https://iitgoffice-my.sharepoint.com/:u:/g/pe
 
 ### Submitting a job request
 
+Submit the job using the following command:
+```
+kubectl create -f job_description_file.yaml
+```
 
 ### Monitoring job progress and debugging
 
@@ -37,12 +41,18 @@ The status messages have the following meaning:
 | CreatingContainer | The Kubernetes cluster is creating the docker container. It might take some time, especially when a new docker image is pulled from the docker hub site.|
 | Error | The job terminated with an error |
 | Completed | The job has successfully completed |
+| Pending | The scheduler is waiting for a node which has the requested resources available. |
 
+#### Monitoring job
 
-
-If the job in execution prints output to stdout, then to view that output, you can use the kubectl logs command mentioned below. This will continuously display the stdout messages on the terminal.
+If the job in execution prints output to stdout, then to view that output, you can use the kubectl logs command mentioned below. This will continuously display the stdout messages on the terminal. Also if the job is terminated with the Error status, detailed information of the error will be provided by this command.
 
 ```
 kubectl logs -k pod/name_of_the_pod_in_job_description_file
 ```
 
+Also, if the job is with the running status, it is possible to attach the shell withing the container to your terminal with the following command.
+
+```
+kubectl exec -it pod_name bash
+```
