@@ -1,1 +1,48 @@
-# kubernetes_py3_master_image
+# Instructions for using IITG CSE Dept. Kubernetes cluster
+
+
+## Kubernetes setup information
+
+Information on the number of systems in the Kubernetes cluster along with the configuration is available at: [http://jatinga.iitg.ernet.in/cseintranet/compufacility](http://jatinga.iitg.ernet.in/cseintranet/compufacility) (Intranet link)
+
+## Account creation and login details
+
+To get an account, please contact Mr. Bhriguraj Borah, CSE Technical officer. Once the account is created, a user will get login details of a login node. The login node has Ubuntu 18.04 OS installed, with neither GPU support nor any computational tools such as TensorFlow or Pytorch installed. The user is requested to copy all the necessary code/data to the login node and submit a CPU/GPU job to kubernetes cluster using the instructions mentioned below.
+
+## How to submit a job request to Kubernetes cluster
+
+### Job description file
+Create a job file for the task that you need to execute on the cluster.
+A sample job file is available at [https://iitgoffice-my.sharepoint.com/:u:/g/personal/abhishek_abhishek_iitg_ac_in/Edp4arimO0dMi421vKohh1EBd1iKEaId3876Bi-ulfX4Ig?e=PB0rc6](https://iitgoffice-my.sharepoint.com/:u:/g/personal/abhishek_abhishek_iitg_ac_in/Edp4arimO0dMi421vKohh1EBd1iKEaId3876Bi-ulfX4Ig?e=PB0rc6)
+
+
+### Submitting a job request
+
+
+### Monitoring job progress and debugging
+
+#### Job status
+
+To check the status of the job, use the following command:
+
+```
+kubectl get pods
+```
+
+The status messages have the following meaning:
+
+| Status | Meaning |
+|--------|---------|
+| Running | The job is currently running. |
+| CreatingContainer | The Kubernetes cluster is creating the docker container. It might take some time, especially when a new docker image is pulled from the docker hub site.|
+| Error | The job terminated with an error |
+| Completed | The job has successfully completed |
+
+
+
+If the job in execution prints output to stdout, then to view that output, you can use the kubectl logs command mentioned below. This will continuously display the stdout messages on the terminal.
+
+```
+kubectl logs -k pod/name_of_the_pod_in_job_description_file
+```
+
