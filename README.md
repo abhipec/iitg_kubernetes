@@ -42,6 +42,7 @@ The status messages have the following meaning:
 | Error | The job terminated with an error |
 | Completed | The job has successfully completed |
 | Pending | The scheduler is waiting for a node which has the requested resources available. |
+| ImagePullBackOff | It occurs when their is an issue in pulling the specified docker image either due to internet connectivity or wrong image name. |
 
 #### Monitoring job
 
