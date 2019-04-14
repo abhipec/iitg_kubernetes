@@ -9,6 +9,17 @@ Information on the number of systems in the Kubernetes cluster along with the co
 
 To get an account, please contact Mr. Bhriguraj Borah, CSE Technical officer. Once the account is created, a user will get login details of a login node. The login node has Ubuntu 18.04 OS installed, with neither GPU support nor any computational tools such as TensorFlow or Pytorch installed. The user is requested to copy all the necessary code/data to the login node and submit a CPU/GPU job to kubernetes cluster using the instructions mentioned below.
 
+## What is Docker and Kubernetes?
+
+If there terms are new to you, please refer to these resources.
+
+
+* A brief introduction of docker (video): [https://www.youtube.com/watch?v=rmf04ylI2K0](https://www.youtube.com/watch?v=rmf04ylI2K0)
+* A beirf intorduction of docker (blog): [https://opensource.com/resources/what-docker](https://opensource.com/resources/what-docker)
+* A brief introduction of kubernetes (video): [https://www.youtube.com/watch?v=R-3dfURb2hA](https://www.youtube.com/watch?v=R-3dfURb2hA)
+* A brief introduction of kubernetes (documentation): [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) 
+
+
 ## How to submit a job request to Kubernetes cluster
 
 ### Job description file
