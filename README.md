@@ -68,3 +68,11 @@ Also, if the job is with the running status, it is possible to attach the shell 
 ```
 kubectl exec -it pod_name bash
 ```
+
+#### Pending jobs
+
+To know why a job is in pending status, use the following command:
+```
+kubectl describe pod name_of_the_pod
+```
+
