@@ -29,7 +29,7 @@ RUN pip3 --no-cache-dir install dill bleach namedtupled
 
 RUN pip3 --no-cache-dir install PyEMD
 
-RUN pip3 --no-cache-dir install pytorch-pretrained-bert seqeval nltk
+RUN pip3 --no-cache-dir install pytorch-pretrained-bert==0.6.1 torch==1.0.1.post2 seqeval==0.0.5 nltk
 #
 # Expose port 80
 #EXPOSE 80
