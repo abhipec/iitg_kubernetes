@@ -36,8 +36,6 @@ RUN pip3 --no-cache-dir install pytorch-pretrained-bert==0.6.1 torch==1.0.1.post
 RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
 
 RUN apt-get install -y git
-
-RUN pip3 --no-cache-dir install https://github.com/guillaumegenthial/tf_metrics.git
 #
 # Expose port 80
 #EXPOSE 80
