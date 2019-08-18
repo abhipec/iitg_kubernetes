@@ -24,7 +24,7 @@ If there terms are new to you, please refer to these resources.
 
 ### Job description file
 Create a job file for the task that you need to execute on the cluster.
-A sample job file is available at [https://iitgoffice-my.sharepoint.com/:u:/g/personal/abhishek_abhishek_iitg_ac_in/Edp4arimO0dMi421vKohh1EBd1iKEaId3876Bi-ulfX4Ig?e=PB0rc6](https://iitgoffice-my.sharepoint.com/:u:/g/personal/abhishek_abhishek_iitg_ac_in/Edp4arimO0dMi421vKohh1EBd1iKEaId3876Bi-ulfX4Ig?e=PB0rc6)
+A sample job file is available at [https://iitgoffice-my.sharepoint.com/:w:/g/personal/abhishek_abhishek_iitg_ac_in/EQEcxggq5oRGipp_XCBGY2gBs8Vbb3KSbL7BU_bAiYRm1A?e=sAFhU6](https://iitgoffice-my.sharepoint.com/:w:/g/personal/abhishek_abhishek_iitg_ac_in/EQEcxggq5oRGipp_XCBGY2gBs8Vbb3KSbL7BU_bAiYRm1A?e=sAFhU6)
 
 
 ### Submitting a job request
