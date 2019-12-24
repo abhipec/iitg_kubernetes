@@ -26,5 +26,5 @@ RUN ln -s $(which python3) /usr/local/bin/python
 
 RUN pip3 install tensorflow
 
-COPY bashrc /etc/bash.bashrc
-RUN chmod a+rwx /etc/bash.bashrc
+#COPY bashrc /etc/bash.bashrc
+#RUN chmod a+rwx /etc/bash.bashrc
