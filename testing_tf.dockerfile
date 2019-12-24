@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y curl
 ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
-    pyhton3 \
+    python3 \
     python3-pip
 
 RUN pip3 --no-cache-dir install --upgrade \
