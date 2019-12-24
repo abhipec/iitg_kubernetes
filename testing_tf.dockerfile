@@ -26,5 +26,7 @@ RUN ln -s $(which python3) /usr/local/bin/python
 
 RUN pip3 install tensorflow
 
+RUN pip3 install pandas
+
 #COPY bashrc /etc/bash.bashrc
 #RUN chmod a+rwx /etc/bash.bashrc
