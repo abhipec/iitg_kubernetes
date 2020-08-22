@@ -76,3 +76,8 @@ To know why a job is in pending status, use the following command:
 kubectl describe pod name_of_the_pod
 ```
 
+### Dashboard
+
+Details of all user submitted pods running on the cluster are available at: [http://172.16.117.58:5000/](http://172.16.117.58:5000/)
+
+
